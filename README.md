@@ -38,12 +38,6 @@ Django
 Django REST Framework
 JavaScript (Fetch API)
 
-Screenshots
-Screenshots/terminal.png
-Screenshots/frontend.png
-Screenshots/add-task.png
-Screenshots/output.png
-
 Author
 Anchal L. Kolkar
 Task management, full-stack logic & cyberpunk UI enthusiast 😈🔥
