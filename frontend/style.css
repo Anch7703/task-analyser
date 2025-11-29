@@ -1,0 +1,152 @@
+/* === CYBERPUNK GLOBAL THEME === */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #0d0d1a, #000);
+    font-family: "Orbitron", sans-serif;
+    color: #e9e9ff;
+}
+
+/* Glowing container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(15, 15, 35, 0.45);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 0, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.2);
+}
+
+/* Title glow */
+h1 {
+    text-align: center;
+    color: #ff56f6;
+    font-size: 2.3rem;
+    text-shadow: 0 0 15px #ff56f6;
+}
+
+/* Section headings */
+h2, h3 {
+    color: #00fff2;
+    text-shadow: 0 0 10px #00fff2;
+}
+
+/* Inputs */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(10, 10, 25, 0.8);
+    border: 1px solid #6a00b9;
+    border-radius: 6px;
+    color: #e4e4ff;
+    font-family: inherit;
+    box-shadow: 0 0 10px rgba(106, 0, 185, 0.4);
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #ff00e6, #5500ff);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+}
+
+/* Output box */
+.output {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(10, 10, 30, 0.7);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Individual task card */
+.task-box {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgba(20, 20, 45, 0.75);
+    border: 1px solid rgba(255, 0, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+    transition: 0.2s ease;
+}
+
+.task-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+}
+
+/* Score color themes */
+.high {
+    border-color: rgba(255, 0, 153, 0.8);
+    box-shadow: 0 0 20px rgba(255, 0, 153, 0.5);
+}
+
+.medium {
+    border-color: rgba(0, 255, 204, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+.low {
+    border-color: rgba(0, 150, 255, 0.7);
+    box-shadow: 0 0 20px
+}
+/* === CYBERPUNK TOAST NOTIFICATIONS === */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background: rgba(25, 0, 45, 0.9);
+    border-left: 4px solid #ff00e6;
+    padding: 12px 15px;
+    color: #fefefe;
+    margin-top: 12px;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    animation: slideIn 0.4s ease, fadeOut 0.4s ease 3s forwards;
+}
+
+.toast.error {
+    border-left-color: #ff0033;
+    box-shadow: 0 0 15px rgba(255, 0, 51, 0.6);
+}
+
+.toast.success {
+    border-left-color: #00ffea;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.6);
+}
+
+@keyframes slideIn {
+    from { transform: translateX(150%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; transform: translateX(150%); }
+}
